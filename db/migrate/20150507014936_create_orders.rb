@@ -5,6 +5,7 @@ class CreateOrders < ActiveRecord::Migration
       t.integer :quantity
       t.decimal :cost
 	  t.string :customer_name
+	  t.string :location
 
       t.timestamps
     end
