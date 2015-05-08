@@ -4,9 +4,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :customer_name
       t.string :email
 	  t.string :password
-	  t.boolean :boolean
+	  t.boolean :admin
 	  t.string :location
-
       t.timestamps
     end
   end

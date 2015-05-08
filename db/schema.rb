@@ -25,13 +25,17 @@ ActiveRecord::Schema.define(version: 20150507015028) do
     t.integer  "quantity"
     t.decimal  "cost"
     t.string   "customer_name"
+    t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
-    t.string   "name"
+    t.string   "customer_name"
     t.string   "email"
+    t.string   "password"
+    t.boolean  "admin"
+    t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
