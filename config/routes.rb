@@ -4,8 +4,10 @@ Rails.application.routes.draw do
   resources :orders
 
   resources :users
-  root 'users#index'
-
+  root 'signin#index'
+  
+  get 'signin/register' => 'signin#register'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
