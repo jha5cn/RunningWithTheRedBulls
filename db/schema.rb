@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150507015028) do
+ActiveRecord::Schema.define(version: 20150709005345) do
 
   create_table "inventories", force: true do |t|
     t.string   "item_name"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20150507015028) do
     t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "password_digest"
   end
 
 end

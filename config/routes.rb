@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+
   resources :inventories
 
   resources :orders
 
   resources :users
-  root 'signin#index'
+  root 'sessions#new' 
   
   get 'signin/register' => 'signin#register'
   
